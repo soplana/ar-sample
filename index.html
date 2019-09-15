@@ -10,7 +10,7 @@ o<!doctype HTML>
 
 <body style="margin : 0px; overflow: hidden">
   <!-- AR.jsのデバックとA-FrameのVRボタンを非表示 -->
-  <a-scene embedded arjs="debugUIEnabled: false" renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
+  <a-scene embedded arjs="debugUIEnabled: false" renderer="gammaOutput: true; gammaInput: true;" vr-mode-ui="enabled: false">
     <a-assets>
       <!-- 3Dモデルをプリロード -->
       <a-asset-item id="model" src="./sample_model.glb"></a-asset-item>
