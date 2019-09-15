@@ -10,7 +10,7 @@
   <a-scene
     id="scene"
     embedded arjs="debugUIEnabled:false;"
-    renderer="gammaOutput: true; gammaInput: true;"
+    renderer="gammaOutput: true;"
     vr-mode-ui="enabled: false">
     <a-assets>
       <!-- 3Dモデルをプリロード -->
@@ -24,10 +24,5 @@
     <a-entity camera></a-entity>
   </a-scene>
 </body>
-
-<script>
-  document.getElementById("scene").renderer.gammaInput = true;
-  document.getElementById("scene").renderer.gammaOutput = true;
-</script>
 
 </html>
