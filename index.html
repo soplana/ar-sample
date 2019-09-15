@@ -4,6 +4,9 @@ o<!doctype HTML>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <!-- AR.jsを読み込み -->
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+<script>
+  document.querySelector("a-scene").renderer.gammaInput = true;
+</script>
 
 <body style="margin : 0px; overflow: hidden">
   <!-- AR.jsのデバックとA-FrameのVRボタンを非表示 -->
