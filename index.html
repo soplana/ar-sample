@@ -8,6 +8,7 @@
 <body style="margin : 0px; overflow: hidden">
   <!-- AR.jsのデバックとA-FrameのVRボタンを非表示 -->
   <a-scene
+    id="scene"
     embedded arjs="debugUIEnabled:false;"
     renderer="gammaOutput: true; gammaInput: true;"
     vr-mode-ui="enabled: false">
@@ -25,8 +26,8 @@
 </body>
 
 <script>
-  document.querySelector("a-scene").renderer.gammaInput = true;
-  document.querySelector("a-scene").renderer.gammaOutput = true;
+  document.getElementById("scene").renderer.gammaInput = true;
+  document.getElementById("scene").renderer.gammaOutput = true;
 </script>
 
 </html>
